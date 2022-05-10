@@ -19,10 +19,10 @@ public class SQRServiceTest {
     @Test
 
     public void test1() {
-        MathService service = new MathService();
+        MathService service1 = new MathService();
 
-        int actual = service.SRQService(-100, -300);
-        int expected = 3;
+        int actual = service1.SRQService(490, 770);
+        int expected = 5;
 
         Assertions.assertEquals(expected, actual);
     }
@@ -30,10 +30,10 @@ public class SQRServiceTest {
     @Test
 
     public void test2() {
-        MathService service = new MathService();
+        MathService service2 = new MathService();
 
-        int actual = service.SRQService(5_000, -3_948);
-        int expected = 899;
+        int actual = service2.SRQService(5_000, 8_396);
+        int expected = 21;
 
         Assertions.assertEquals(expected, actual);
     }
